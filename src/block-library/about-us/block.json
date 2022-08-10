@@ -1,0 +1,16 @@
+{
+	"apiVersion": 2,
+	"name": "plugin-name/about-us",
+	"version": "0.1.0",
+	"title": "About Us",
+	"category": "text",
+	"icon": "admin-users",
+	"description": "About us widget for theme",
+	"supports": {
+		"html": false
+	},
+	"textdomain": "gt_block",
+	"editorScript": "file:../../../build/js/about-us/about-us.js",
+	"editorStyle": "file:../../../build/css/about-us.css",
+	"style": "file:../../../build/css/style-about-us.css"
+}
