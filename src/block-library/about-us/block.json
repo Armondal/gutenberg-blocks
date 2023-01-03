@@ -1,6 +1,6 @@
 {
 	"apiVersion": 2,
-	"name": "plugin-name/about-us",
+	"name": "gt-block/about-us",
 	"version": "0.1.0",
 	"title": "About Us",
 	"category": "text",
@@ -8,6 +8,42 @@
 	"description": "About us widget for theme",
 	"supports": {
 		"html": false
+	},
+	"attributes": {
+		"details": {
+			"type": "string",
+			"source": "html",
+			"selector": "p"
+		},
+		"id": {
+			"type": "number"
+		},
+		"alt": {
+			"type": "string",
+			"source": "attribute",
+			"selector": "img",
+			"attribute": "alt",
+			"default": ""
+		},
+		"url": {
+			"type": "string",
+			"source": "attribute",
+			"selector": "img",
+			"attribute": "src"
+		},
+		"socialLinks": {
+			"type": "array",
+			"default": [
+				{
+					"link": "https:/facebook.com",
+					"icon": "facebook"
+				},
+				{
+					"link": "https:/google.com",
+					"icon": "google"
+				}
+			]
+		}
 	},
 	"textdomain": "gt_block",
 	"editorScript": "file:../../../build/js/about-us/about-us.js",

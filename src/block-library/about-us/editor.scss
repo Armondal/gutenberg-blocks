@@ -3,11 +3,55 @@
  *
  * Replace them with your own styles or remove the file completely.
  */
+.wp-block-gt-block-about-us{
+    .wp-block-about-us-logo{
+        position: relative;
+        &.is-loading img{
+            opacity: 0.3;
+        }
+        .components-spinner{
+            position: absolute;
+            left: 0;
+            right: 0;
+            top: 0;
+            bottom: 0;
+            margin: auto;
+        }
+     }
 
-.wp-block-create-block-about-us {
-	border: 1px dotted #f00;
-}
+     .social-links{
+        ul{
+            list-style: none;
+            padding: 0;
+            margin: 20px -5px 0;
+            li{
+                display: inline-block;
+                margin: 5px;
+                font-size: 14px ;
+              
+                span.dashicon{
+                    color: #4e4e4e;
+                    font-size: 25px;
+                }
+                button{
+                    background: none;
+                    border: none;
+                    padding: 0;
+                    cursor: pointer;
+                    margin: 0;
+                    padding-right: 5px;
+                    font-size: 20px;
 
-.wp-block-create-block-about-us {
-	border: 1px dotted blue;
+                }
+                &.add-social-item{
+                    button{
+                        outline: 1px dashed;
+                    }
+                }
+                &.is-selected{
+                    outline: 2px solid rgb(208, 40, 227);
+                }
+            }
+        }
+     }
 }

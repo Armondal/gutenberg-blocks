@@ -1,0 +1,48 @@
+/**
+ * The following styles get applied inside the editor only.
+ *
+ * Replace them with your own styles or remove the file completely.
+ */
+.wp-block-gt-block-about-us .wp-block-about-us-logo {
+  position: relative;
+}
+.wp-block-gt-block-about-us .wp-block-about-us-logo.is-loading img {
+  opacity: 0.3;
+}
+.wp-block-gt-block-about-us .wp-block-about-us-logo .components-spinner {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+}
+.wp-block-gt-block-about-us .social-links ul {
+  list-style: none;
+  padding: 0;
+  margin: 20px -5px 0;
+}
+.wp-block-gt-block-about-us .social-links ul li {
+  display: inline-block;
+  margin: 5px;
+  font-size: 14px;
+}
+.wp-block-gt-block-about-us .social-links ul li span.dashicon {
+  color: #4e4e4e;
+  font-size: 25px;
+}
+.wp-block-gt-block-about-us .social-links ul li button {
+  background: none;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+  margin: 0;
+  padding-right: 5px;
+  font-size: 20px;
+}
+.wp-block-gt-block-about-us .social-links ul li.add-social-item button {
+  outline: 1px dashed;
+}
+.wp-block-gt-block-about-us .social-links ul li.is-selected {
+  outline: 2px solid rgb(208, 40, 227);
+}/*# sourceMappingURL=editor.css.map */

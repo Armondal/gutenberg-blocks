@@ -1,0 +1,41 @@
+{
+	"apiVersion": 2,
+	"name": "gt-block/posts-list",
+	"version": "0.1.0",
+	"title": "Posts List",
+	"category": "widgets",
+	"icon": "admin-post",
+	"description": "Posts List can be set with image, and order",
+	"keywords": ["posts", "blog"],
+	"supports": {
+		"html": false
+	},
+	"attributes": {
+		"numberOfPosts": {
+			"type": "number",
+			"default": 6
+		},
+		"displayFeaturedImage": {
+			"type": "boolean",
+			"default": true
+		},
+		"order": {
+			"type": "string",
+			"default": "desc"
+		},
+		"orderBy": {
+			"type": "string",
+			"default": "date"
+		},
+		"categories": {
+			"type": "array",
+			"items": {
+				"type": "object"
+			}
+		}
+	},
+	"textdomain": "gt_block",
+	"editorScript": "file:../../../build/js/posts-list/posts-list.js",
+	"editorStyle": "file:../../../build/css/posts-list.css",
+	"style": "file:../../../build/css/style-posts-list.css"
+}

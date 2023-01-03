@@ -1,0 +1,45 @@
+/**
+ * The following styles get applied both on the front of your site
+ * and in the editor.
+ *
+ * Replace them with your own styles or remove the file completely.
+ */
+.wp-block-create-block-multi-about-us {
+  background-color: #21759b;
+  color: #fff;
+  padding: 2px;
+}
+
+.wp-block-gt-block-about-us .wp-image-5 {
+  margin-bottom: 30px;
+}
+.wp-block-gt-block-about-us .social-links ul {
+  list-style: none;
+  padding: 0;
+  margin: 0px -5px 10px;
+}
+.wp-block-gt-block-about-us .social-links ul li {
+  display: inline-block;
+  margin: 5px;
+}
+.wp-block-gt-block-about-us .social-links ul li a span.dashicon {
+  color: #4e4e4e;
+  font-size: 25px;
+}
+.wp-block-gt-block-about-us .social-links ul li button {
+  background: none;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+  margin: 0;
+  font-size: 30px;
+}
+.wp-block-gt-block-about-us .social-links ul li.add-social-item button {
+  outline: 1px dashed;
+}
+.wp-block-gt-block-about-us .social-links ul li.is-selected {
+  outline: 2px solid rgb(208, 40, 227);
+}
+.wp-block-gt-block-about-us .social-links ul li::before {
+  content: none;
+}/*# sourceMappingURL=style.css.map */
