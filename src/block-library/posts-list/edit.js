@@ -103,7 +103,6 @@ export default function Edit({ attributes, setAttributes }) {
 							post._embedded["wp:featuredmedia"] &&
 							post._embedded["wp:featuredmedia"].length > 0 &&
 							post._embedded["wp:featuredmedia"][0];
-
 						return (
 							<div className="blog-list-item row" key={post.id}>
 								{displayFeaturedImage && featuredImage && (
@@ -111,7 +110,7 @@ export default function Edit({ attributes, setAttributes }) {
 										<a href={post.link}>
 											<img
 												src={
-													featuredImage.media_details.sizes.eros_small_list_grid
+													featuredImage.media_details.sizes.medium
 														.source_url
 												}
 												alt={featuredImage.alt_text}
@@ -124,8 +123,8 @@ export default function Edit({ attributes, setAttributes }) {
 								<div
 									className={displayFeaturedImage ? "col-md-8" : "col-md-12"}
 								>
-									<h4 className="title ">
-										<a href={post.link}>
+									<h4 className="title">
+										<a href={post.link} className="text-3xl">
 											{post.title.rendered ? (
 												<RawHTML>{post.title.rendered}</RawHTML>
 											) : (

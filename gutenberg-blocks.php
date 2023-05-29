@@ -106,7 +106,12 @@ function posted_on()
 
 	return '<span class="posted-on">' . $posted_on . '</span>'; // WPCS: XSS OK.
 }
+function gt_blocks_scripts(){
+	wp_enqueue_style( 'bootstrap', '//cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css' );
+}
+add_action( 'wp_enqueue_scripts', 'gt_blocks_scripts' );
 
-
-// echo dirname(__FILE__);
-// die();
+function gt_blocks_editor_scripts(){
+    add_editor_style('editor-style.css');
+}
+add_action( 'admin_init', 'gt_blocks_editor_scripts' );
